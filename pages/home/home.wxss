@@ -1,0 +1,8 @@
+/* pages/home/home.wxss */
+#an{
+    background: #dc8;
+  color:#fff;
+}
+/* page{
+    background: rgb(20, 106, 235);
+} */

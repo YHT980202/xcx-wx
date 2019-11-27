@@ -1,0 +1,12 @@
+<!--components/common-head/com.wxml-->
+<view class="common-head">
+  <view class="goback">{{"<"}}</view>
+  <text class="title">
+    {{ title }}
+    --
+    {{ mation }}
+  </text>
+  <slot name="a"></slot>
+      <button bindtap="emitData">父向子传数据</button>
+      <slot name="b"></slot>
+</view>
