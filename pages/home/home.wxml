@@ -1,4 +1,53 @@
-<!--pages/home/home.wxml-->
-<view class="container">
-  我是首页
+<view class="container" >
+    <scroll-view class="scroll"
+    scroll-left="true"
+     upper-threshold="{{50}}"
+     bindscrolltoupper="scroll"
+     scroll-into-view="c"
+     scroll-with-animation="{{false}}"
+     enable-back-to-top="{{true}}"
+     scroll-x="{{true}}">
+     <!-- 
+       scroll-x  允许横向滚动
+       scroll-y   允许纵向滚动
+       upper-threshold lower-threshold  距离顶/左 和 底/右多远时触发scrolltoupper事件 
+      bindscrolltoupper  滚到顶部或者左边时触发
+      -->
+       <view class="wrap" >
+          <view class="content">1</view>
+          <view class="content">2</view>
+          <view class="content">3</view>
+          <view class="content">4</view>
+          <view class="content">5</view>
+          <view class="content">6</view>
+          <view class="content">7</view>
+       </view>
+     </scroll-view>
+
+
+     <view class="line" hover-class="none" hover-stop-propagation="false">
+       <view class="line"></view>
+       <swiper class="swiper"
+       indicator-dots="{{true}}"
+       indicator-color="blue"
+       indicator-active-color="#df5689"
+       autoplay="{{true}}"
+       current="{{3}}"
+       interval="{{2000}}"
+       duration="{{1000}}"
+       circular="{{true}}"
+       previous-margin="10px"
+       next-margin="10px"
+       display-multiple-items="{{2}}"
+       bindchange="scroll2"
+       >
+       <!-- indicator-dots 是否显示面板指示点 -->
+         <swiper-item class="swiper-item" item-id="1">1</swiper-item>
+         <swiper-item class="swiper-item" item-id="1">2</swiper-item>
+         <swiper-item class="swiper-item" item-id="1">3</swiper-item>
+         <swiper-item class="swiper-item" item-id="1">4</swiper-item>
+       </swiper>
+     </view>
 </view>
+
+

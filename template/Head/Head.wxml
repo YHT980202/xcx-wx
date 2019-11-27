@@ -1,0 +1,8 @@
+<template name="head">
+  <view class="head">
+  我是公共的头部
+  {{title}}
+  {{obj.name}}
+  {{obj.content}}
+  </view>
+</template>
