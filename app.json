@@ -1,20 +1,27 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/news/news",
     "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#09ec67",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#fc8",
+    "navigationBarTitleText": "欢迎学习小程序",
     "navigationBarTextStyle": "white",
-    "backgroundColor":"#09ec67",
+    "backgroundColor":"#f00",
     "enablePullDownRefresh":true
+
   },
   "debug":false,
-  "style":"v2",
+  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "requiredBackgroundModes":[
     "audio"
-  ]
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
 }

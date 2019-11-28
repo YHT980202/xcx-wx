@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class="conta">
+    <button class="login" loading="{{isLoading}}" bindtap="login">
+        登录
+    </button>
+</view>
