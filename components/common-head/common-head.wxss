@@ -1,8 +1,0 @@
-/* components/common-head/com.wxss */
-.common-head{
-    height:200rpx;
-    width:750rpx;
-    display: flex;
-    justify-content: space-around;
-}
-
